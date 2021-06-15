@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block title %}
+<!-- <h1 class="text-center">Rick and Morty</h1> -->
+{% endblock title %} {% block body %}
+<div class="container">
+  <div class="row">
+    {% for profile in profiles %}
+    <div class="col">
+      <div class="card" style="width: 25rem">
+        <div class="card-body">
+          <h5 class="card-title">{{profile.title}}</h5>
+          <h5 class="card-title">{{profile.date}}</h5>
+          <h5 class="card-title">{{profile.content}}</h5>
+          <h5 class="card-title">{{profile.writer}}</h5>
+          <h5 class="card-title">{{profile.email}}</h5>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock body %}

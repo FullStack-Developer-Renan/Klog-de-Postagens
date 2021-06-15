@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">{{filter_profile.title}}</h5>
+          <h5 class="card-title">{{filter_profile.date}}</h5>
+          <h5 class="card-title">{{filter_profile.content}}</h5>
+          <h5 class="card-title">{{filter_profile.writer}}</h5>
+          <h5 class="card-title">{{filter_profile.email}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}

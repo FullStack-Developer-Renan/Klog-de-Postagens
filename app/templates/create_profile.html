@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block body %}
+
+<form
+  class="d-block"
+  action="/api/posts"
+  method="POST"
+  style="width: 300px; text-align: center; margin: auto auto"
+>
+  <input class="form-control me-2" placeholder="Título" name="title" />
+  <input
+    class="form-control me-2"
+    placeholder="Data"
+    name="date"
+    type="datetime-local"
+  />
+  <textarea
+    class="form-control me-2"
+    placeholder="Conteúdo"
+    name="content"
+  ></textarea>
+  <input class="form-control me-2" placeholder="Autor" name="writer" />
+  <input class="form-control me-2" placeholder="Email" name="email" />
+  <button class="btn btn-outline-success" type="submit">Criar</button>
+</form>
+{% endblock body %}
